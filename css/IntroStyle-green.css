@@ -1,0 +1,68 @@
+
+ /* NOTES: For editing the gradients edit the startColorStr and endColorStr in 2 places: */
+
+
+ /* START COLORS - BACKGROUND COLORS */
+
+BODY		{
+		scrollbar-base-color: #141C24;
+ 		background-color: #3F4B57;
+		filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=1,
+		startColorStr=#000000,endColorStr=#3F4B57 );
+		}
+
+ /* IMAGE SIZE */
+
+
+.imagearea	{ height: 350px; }
+
+
+ /* BORDER COLORS */
+
+.borderlines	{
+		border-top: #FF0000 1px solid; 
+		border-bottom: #FF0000 1px solid;
+		padding: 5px;
+		height: 20px;
+		background-color: #141C24;
+		}
+
+
+ /* MAIN FONT COLOR */
+
+TABLE 		{ COLOR: #FFFFFF; FONT: bold 11px arial, sans-serif; }
+
+.title 		{ color: #FFFFFF; font: 16px arial, sans-serif; font-weight: bold; }
+
+.just 		{ text-align: justify; }
+
+
+ /* LINK COLORS */
+
+a:link    	{ color: #FFFFFF; text-decoration: none; }
+a:active	{ color: #FFFFFF; text-decoration: none; }
+a:visited	{ color: #FFFFFF; text-decoration: none; }
+a:hover		{ color: #CCFF00; text-decoration: none; }
+
+
+
+ /* BUTTON COLORS AND SPACING */
+
+.enterbutton		{
+			padding-top: 3px;
+			padding-bottom: 3px;
+			width: 160px;
+			white-space: nowrap;
+			display: block;
+			border: #FFFFFF 1px solid;
+			background-color: #3F4B57;
+			}
+
+a.enterbutton:hover	{
+			color: #FF6600;
+			text-decoration: none;
+			border: #FF6600 1px solid;
+			}
+
+
+
