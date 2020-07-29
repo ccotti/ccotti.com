@@ -32,8 +32,6 @@ li a:hover:not(.active) {
   background-color: #4CAF50;
 }
 
-
-
 /*WELCOME SECTION*/
 .welcome-section { 
   display: grid;
