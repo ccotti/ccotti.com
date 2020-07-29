@@ -1,0 +1,318 @@
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+/*Navigation Section*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+
+/*WELCOME SECTION*/
+.welcome-section { 
+  display: grid;
+  grid-template-areas: 'header' 'main' 'footer';
+  padding-top: 100px;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: #123670;
+}
+
+.welcome-h1 {
+  grid-area: main;
+  text-align: center;
+  text-shadow: 2px 1px 2px #000;
+  font-size: 4em;
+  color: #ffcb0d;
+}
+
+.welcome-subtitle {
+  grid-area: main; 
+  text-align: center;
+  padding-top: 100px;
+  text-shadow: 2px 1px 2px #000;
+  font-size: 1.5em;
+  color: #ffcb0d;
+}
+
+.welcome-msg p {
+  grid-area: header;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 20px;
+  color: #ffffff;
+}
+
+/*PORTFOLIO SECTION*/
+.portfolio-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+}
+
+.portfolio-bg { 
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background: #8a8a8a;
+}
+
+.port-bg-overlay {
+  background:rgba(0,0,0, 0.5);
+  width: 100%;
+  height: 100vh;
+}
+
+.port-h1 {
+  position: relative;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-shadow: 2px 1px 2px #000;
+  font-size: 3em;
+  color: #ffcb0d;
+}
+
+.portfolio-item1 {
+  grid-column 1;
+  grid-row: 1;
+}
+.portfolio-item2 {
+  grid-column 2; 
+  grid-row: 1;
+}
+.portfolio-item3 {
+  grid-column 3;
+  grid-row: 1;
+}
+
+.portfolio-msg {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 3%;
+  color: rgba(255, 255, 255, 1);
+}
+
+.portfolio-caption {
+  position: relative;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(255,255,255, 1);
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+#portfolio-sm-txt {
+  position: relative;
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 10px;
+  color: rgba(255,255,255, 1);
+}
+
+/*CONTRACT SECTION*/
+.contact-bg { 
+  text-align: center;
+  background: #123670;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.contact-bg-overlay {
+  background:rgba(0,0,0, 0.2);
+  width: 100%;
+  height: 100vh;
+}
+
+.contact-h1 {
+  position: relative;
+  padding-top: 5%;
+  text-shadow: 2px 1px 2px #000;
+  font-size: 3em;
+  color: #ffcb0d;
+}
+
+.contact-caption {
+  position: relative;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(255,255,255, 1);
+}
+
+.flex-contact-txt {
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(255,255,255, 1);
+  padding-bottom: 10px;
+}
+
+.form-msg {
+  position: relative;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 0%;
+  padding-left: 1%;
+  font-size: 14px;
+  text-align: left;
+  color: #ffcb0d;
+}
+
+.frm-lbl {
+  position: relative;
+  font-size: 20px;
+  text-align: left;
+  color: #ffcb0d;
+}
+
+.frm-flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 650px;
+  margin: 0 0 15px;
+  right: 0;
+}
+
+.frm-flex-item {
+  max-width: 450px;
+  margin: 3%;
+  padding-right: 5%;  
+}
+
+.frm-flex-item2 {
+  max-width: 450px;
+  margin: 8%;
+  position: right;  
+}
+
+.frm-item2-img {
+  border-radius: 50%;
+  position: right;
+}
+
+.msg-input-size {
+  height: 125px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #ffa500;
+}
+
+input[type=email]:focus {
+    border: 3px solid #ffa500;
+}
+
+textarea:focus {
+    border: 4px solid #ffa500;
+}
+
+.frm-submit-btn{
+  float: left;
+}
+
+button[type=submit]:focus {
+    border: 4px solid #ffa500;
+}
+
+.contact-container {
+  float: right;
+}
+
+.social-icons {
+  display: inline-block;
+  padding: 5px;
+}
+
+.fa-linkedin {
+  color: white;
+  font-size: 3em;
+  border: 3px outset rgba(255, 255, 255, 0.6);
+}
+
+.fa-twitter {
+  color: white;
+  font-size: 3em;
+  border: 3px outset rgba(255, 255, 255, 0.6);
+}
+
+.fa-github {
+  color: white;
+  font-size: 3em;
+  border: 3px outset rgba(255, 255, 255, 0.6);
+}
+
+.fa-codepen {
+  color: white;
+  font-size: 3em;
+  border: 3px outset rgba(255, 255, 255, 0.6);
+}
+
+/*FOOTER SECTION*/
+footer {
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.footer-text{
+  color: white;
+  text-align: center;
+}
+
+.fa-copyright {
+  color: white;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio-container {
+    width: 100%;
+  }
+}
